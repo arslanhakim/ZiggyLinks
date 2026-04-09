@@ -1,0 +1,342 @@
+/* ============================================
+   VISIT / BOOKING — Mobile-first
+   ============================================ */
+
+/* ── HERO ── */
+.visit-hero {
+  padding: 6.5rem 0 var(--space-lg);
+  border-bottom: var(--border-hair);
+}
+
+@media (min-width: 768px) {
+  .visit-hero {
+    padding: 8.5rem 0 var(--space-xl);
+  }
+}
+
+.visit-hero__label {
+  color: var(--brass);
+  margin-bottom: 0.75rem;
+}
+
+.visit-headline {
+  margin-top: 0;
+  color: var(--espresso);
+}
+
+.visit-headline em {
+  color: var(--brass);
+  font-style: italic;
+}
+
+
+/* ── BODY LAYOUT ── */
+.visit-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 901px) {
+  .visit-body {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .visit-body {
+    gap: 5rem;
+  }
+}
+
+
+/* ── INFO BLOCKS ── */
+.visit-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.visit-detail-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: var(--space-lg);
+  border-bottom: var(--border-hair);
+}
+
+.visit-detail-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.visit-detail-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+@media (min-width: 768px) {
+  .visit-detail-title {
+    font-size: 1.3rem;
+  }
+}
+
+.visit-detail-text {
+  line-height: 1.8;
+}
+
+.text-visit-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--brass);
+  text-decoration: none;
+  border-bottom: 1px solid var(--brass);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+  width: fit-content;
+}
+
+.text-visit-link:hover {
+  opacity: 0.7;
+}
+
+/* Hours */
+.visit-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.visit-hour-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: var(--border-hair);
+}
+
+.visit-hour-row:last-child {
+  border-bottom: none;
+}
+
+.visit-hour-day {
+  color: var(--charcoal);
+}
+
+.visit-hour-time {
+  color: var(--espresso);
+  font-weight: 500;
+}
+
+.visit-hour--closed {
+  color: var(--mid-grey);
+  font-weight: 300;
+}
+
+/* Contacts */
+.visit-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.visit-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.75rem 1rem;
+  background: var(--linen);
+  transition: background 0.2s;
+}
+
+@media (min-width: 768px) {
+  .visit-contact-item {
+    padding: 0.875rem 1rem;
+    gap: 1rem;
+  }
+}
+
+.visit-contact-item:hover {
+  background: var(--oat);
+}
+
+.visit-contact-icon {
+  font-size: 1.1rem;
+  color: var(--brass);
+  width: 1.25rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.visit-contact-label {
+  color: var(--warm-grey);
+  margin-bottom: 0.1rem;
+}
+
+/* Expect list */
+.visit-expect-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.visit-expect-item {
+  padding-left: 1.25rem;
+  position: relative;
+  font-size: 0.9375rem;
+}
+
+.visit-expect-item::before {
+  content: '\2013';
+  position: absolute;
+  left: 0;
+  color: var(--brass);
+}
+
+
+/* ── FORM ── */
+.visit-form-card {
+  background: var(--linen);
+  padding: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .visit-form-card {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .visit-form-card {
+    position: sticky;
+    top: 5rem;
+  }
+}
+
+.visit-form-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--espresso);
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .visit-form-title {
+    font-size: 1.6rem;
+  }
+}
+
+.visit-form-sub {
+  color: var(--warm-grey);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .visit-form-sub {
+    margin-bottom: 2rem;
+  }
+}
+
+.visit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .visit-form {
+    gap: 1.25rem;
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  color: var(--warm-grey);
+}
+
+.visit-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.visit-submit {
+  margin-top: 0.5rem;
+}
+
+.visit-form-note {
+  text-align: center;
+  color: var(--mid-grey);
+}
+
+
+/* ── MAP / DIRECTIONS ── */
+.visit-map {
+  padding-bottom: var(--space-2xl);
+}
+
+.visit-map__card {
+  background: var(--linen);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .visit-map__card {
+    padding: var(--space-xl) var(--space-2xl);
+  }
+}
+
+.visit-map__label {
+  color: var(--brass);
+}
+
+.visit-map__address {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .visit-map__address {
+    font-size: 1.25rem;
+  }
+}
+
+.visit-map__btn {
+  margin-top: 0.5rem;
+}

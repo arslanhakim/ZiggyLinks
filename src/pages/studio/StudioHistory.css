@@ -1,0 +1,178 @@
+.history-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--cream);
+}
+
+.history-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: var(--border-hair);
+  background: var(--off-white);
+}
+
+.history-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--espresso);
+  margin-bottom: 0.25rem;
+}
+
+.history-sub { color: var(--warm-grey); }
+
+.history-today-stat {
+  text-align: right;
+}
+
+.history-today-amount {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--espresso);
+  margin: 0.25rem 0;
+}
+
+.history-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.history-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.history-group-label {
+  color: var(--warm-grey);
+  margin-bottom: 0.75rem;
+}
+
+.sale-row {
+  border-bottom: var(--border-hair);
+  transition: background 0.15s;
+}
+
+.sale-row:first-of-type { border-top: var(--border-hair); }
+
+.sale-row__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.sale-row__header:hover {
+  background: var(--linen);
+}
+
+.sale-row--expanded .sale-row__header {
+  background: var(--linen);
+}
+
+.sale-row__main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sale-row__id {
+  font-family: var(--font-sans);
+  color: var(--mid-grey);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  min-width: 70px;
+}
+
+.sale-row__customer {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--espresso);
+}
+
+.sale-row__items {
+  color: var(--warm-grey);
+}
+
+.sale-row__right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sale-row__date {
+  color: var(--warm-grey);
+}
+
+.sale-row__total {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--espresso);
+  min-width: 90px;
+  text-align: right;
+}
+
+.sale-row__chevron {
+  font-size: 0.6rem;
+  color: var(--mid-grey);
+}
+
+.sale-row__detail {
+  padding: 0.75rem 0.5rem 1rem 1rem;
+  background: var(--linen);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sale-detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: var(--border-hair);
+}
+
+.sale-detail-item:last-of-type { border-bottom: none; }
+
+.sale-detail-note {
+  color: var(--warm-grey);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.history-footer {
+  padding: 1.5rem 2rem;
+  border-top: var(--border-hair);
+}
+
+@media (max-width: 600px) {
+  .sale-row__date { display: none; }
+  .sale-row__right { gap: 0.75rem; }
+}

@@ -1,0 +1,267 @@
+/* ============================================
+   ABOUT — Mobile-first
+   ============================================ */
+
+/* ── HERO ── */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: auto;
+  padding-top: 5rem;
+}
+
+@media (min-width: 901px) {
+  .about-hero {
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+    padding-top: 6rem;
+  }
+}
+
+.about-hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+@media (min-width: 901px) {
+  .about-hero__text {
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
+}
+
+.about-hero__label {
+  color: var(--brass);
+  margin-bottom: 0.5rem;
+}
+
+.about-hero__headline {
+  margin-top: 0;
+  color: var(--espresso);
+}
+
+.about-hero__headline em {
+  color: var(--brass);
+  font-style: italic;
+}
+
+.about-hero__image {
+  overflow: hidden;
+  height: 50vw;
+  max-height: 50vh;
+}
+
+@media (min-width: 901px) {
+  .about-hero__image {
+    height: auto;
+    max-height: none;
+  }
+}
+
+.about-hero__img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ── ORIGIN ── */
+.about-origin__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (min-width: 901px) {
+  .about-origin__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+.about-origin__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-origin__title {
+  margin-top: 0.25rem;
+}
+
+.about-origin__images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .about-origin__images {
+    gap: 1.25rem;
+  }
+}
+
+.origin-img {
+  overflow: hidden;
+}
+
+.origin-img--top {
+  height: 260px;
+}
+
+.origin-img--bottom {
+  height: 180px;
+}
+
+@media (min-width: 768px) {
+  .origin-img--top {
+    height: 380px;
+  }
+  .origin-img--bottom {
+    height: 220px;
+    margin-left: 3rem;
+  }
+}
+
+
+/* ── VALUES ── */
+.about-values {
+  background: var(--linen);
+}
+
+.about-values__title {
+  margin-top: 0.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: var(--space-lg);
+  border-top: var(--border-hair);
+  padding-top: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .value-item {
+    gap: 0.75rem;
+  }
+}
+
+.value-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+@media (min-width: 768px) {
+  .value-title {
+    font-size: 1.3rem;
+  }
+}
+
+.value-body {
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+
+/* ── TEAM ── */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .team-card {
+    gap: 1.5rem;
+  }
+}
+
+.team-img {
+  aspect-ratio: 4/5;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.team-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+@media (min-width: 768px) {
+  .team-name {
+    font-size: 1.3rem;
+  }
+}
+
+.team-role {
+  color: var(--brass);
+}
+
+.team-bio {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+/* ── CTA ── */
+.about-cta {
+  background: var(--espresso);
+}
+
+.about-cta__headline {
+  color: var(--oat);
+}
+
+.about-cta__headline em {
+  font-style: italic;
+  color: var(--brass-light);
+}
+
+.about-cta__body {
+  color: var(--sand);
+  margin: 1.25rem auto 0;
+  max-width: 400px;
+}

@@ -1,0 +1,214 @@
+/* ============================================
+   HOW IT WORKS — Mobile-first
+   ============================================ */
+
+/* ── HERO ── */
+.hiw-hero {
+  padding: 6.5rem 0 var(--space-lg);
+  border-bottom: var(--border-hair);
+}
+
+@media (min-width: 768px) {
+  .hiw-hero {
+    padding: 8.5rem 0 var(--space-xl);
+  }
+}
+
+.hiw-hero__label {
+  color: var(--brass);
+  margin-bottom: 0.75rem;
+}
+
+.hiw-hero__title {
+  color: var(--espresso);
+}
+
+.hiw-hero__sub {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--warm-grey);
+  margin-top: 1rem;
+  max-width: 520px;
+}
+
+
+/* ── STEPS ── */
+.hiw-steps {
+  border-bottom: var(--border-hair);
+}
+
+.hiw-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: var(--space-lg) 0;
+  border-bottom: var(--border-hair);
+}
+
+.hiw-step:last-child {
+  border-bottom: none;
+}
+
+/* Step number — always visible */
+.hiw-step__num {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--oat);
+  line-height: 1;
+}
+
+/* Step content */
+.hiw-step__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hiw-step__title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--espresso);
+  line-height: 1.2;
+}
+
+.hiw-step__body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+.hiw-step__note {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--brass-muted);
+  line-height: 1.4;
+}
+
+/* Step image — hidden on mobile, shown on tablet+ */
+.hiw-step__img {
+  display: none;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hiw-step {
+    grid-template-columns: 48px 1fr 300px;
+    gap: 2.5rem;
+    align-items: center;
+    padding: var(--space-xl) 0;
+  }
+
+  .hiw-step__num {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .hiw-step__title {
+    font-size: 1.5rem;
+  }
+
+  .hiw-step__content {
+    gap: 0.75rem;
+  }
+
+  .hiw-step__img {
+    display: block;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hiw-step {
+    grid-template-columns: 80px 1fr 380px;
+    gap: 3rem;
+  }
+
+  .hiw-step__num {
+    font-size: 3.5rem;
+  }
+
+  .hiw-step__title {
+    font-size: 1.7rem;
+  }
+
+  .hiw-step__img {
+    height: 260px;
+  }
+}
+
+
+/* ── QUICK FAQ ── */
+.hiw-faq {
+  background: var(--linen);
+}
+
+.hiw-faq__title {
+  margin-top: 0.75rem;
+  margin-bottom: var(--space-lg);
+}
+
+.hiw-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hiw-faq-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.hiw-faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--border-hair);
+}
+
+@media (min-width: 768px) {
+  .hiw-faq-item {
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.hiw-faq-q {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+@media (min-width: 768px) {
+  .hiw-faq-q {
+    font-size: 1.15rem;
+  }
+}
+
+.hiw-faq-a {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.hiw-faq__cta {
+  margin-top: var(--space-lg);
+}
+
+
+/* ── CTA ── */
+.hiw-cta__body {
+  margin: 1.25rem auto 0;
+  max-width: 420px;
+}
+
+.hiw-cta .btn {
+  margin-top: var(--space-md);
+}

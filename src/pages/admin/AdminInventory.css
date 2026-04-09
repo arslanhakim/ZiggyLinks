@@ -1,0 +1,202 @@
+.inv-shell {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-header-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Summary bar */
+.inv-summary-bar {
+  display: flex;
+  gap: 0;
+  background: var(--off-white);
+  border-bottom: var(--border-hair);
+}
+
+.inv-summary-item {
+  flex: 1;
+  padding: 1.25rem 1.75rem;
+  border-right: var(--border-hair);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inv-summary-item:last-child { border-right: none; }
+
+.inv-summary-val {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+.inv-summary-val--warn { color: var(--brass); }
+.inv-summary-val--alert { color: var(--rust-muted); }
+
+/* Filters */
+.inv-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  border-bottom: var(--border-hair);
+  background: var(--off-white);
+}
+
+/* Table */
+.inv-table-wrap {
+  flex: 1;
+  overflow-x: auto;
+  padding: 0 0 2rem;
+}
+
+.inv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.inv-table thead th {
+  padding: 0.875rem 1.25rem;
+  text-align: left;
+  background: var(--linen);
+  border-bottom: var(--border-hair);
+  white-space: nowrap;
+  color: var(--mid-grey);
+}
+
+.inv-row {
+  border-bottom: var(--border-hair);
+  transition: background 0.15s;
+}
+
+.inv-row:hover { background: var(--linen); }
+.inv-row--out { background: rgba(140, 94, 60, 0.03); }
+.inv-row--out:hover { background: rgba(140, 94, 60, 0.06); }
+.inv-row--low { background: rgba(184, 150, 62, 0.03); }
+.inv-row--low:hover { background: rgba(184, 150, 62, 0.06); }
+
+.inv-cell {
+  padding: 1rem 1.25rem;
+  vertical-align: middle;
+}
+
+.inv-cell--name { min-width: 200px; }
+.inv-cell--mat { color: var(--warm-grey); min-width: 140px; }
+.inv-cell--price { white-space: nowrap; }
+.inv-cell--stock { width: 100px; }
+.inv-cell--action { width: 60px; text-align: right; }
+
+.inv-product-name {
+  font-weight: 500;
+  color: var(--espresso);
+  margin-bottom: 0.2rem;
+}
+
+.inv-product-slug {
+  color: var(--mid-grey);
+  font-size: 0.7rem;
+}
+
+.inv-cat-tag {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: var(--warm-grey);
+  background: var(--linen);
+  padding: 0.2rem 0.6rem;
+}
+
+.inv-price {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+/* Qty display */
+.inv-qty-display {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+.inv-qty--out { color: var(--rust-muted); }
+.inv-qty--low { color: var(--brass); }
+
+.inv-saved-flash {
+  font-size: 0.75rem;
+  color: #3d7a3d;
+  margin-left: 4px;
+}
+
+/* Edit row */
+.inv-edit-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.inv-qty-input {
+  width: 60px;
+  padding: 0.3rem 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  border: 1px solid var(--brass);
+  background: white;
+  outline: none;
+  text-align: center;
+}
+
+.inv-save-btn,
+.inv-cancel-btn {
+  width: 24px;
+  height: 24px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: var(--border-hair);
+  background: var(--linen);
+  transition: background 0.15s;
+}
+
+.inv-save-btn:hover { background: rgba(76, 120, 76, 0.15); color: #3d7a3d; }
+.inv-cancel-btn:hover { background: rgba(140, 94, 60, 0.1); color: var(--rust-muted); }
+
+.inv-edit-btn {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--warm-grey);
+  background: none;
+  border: var(--border-hair);
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  border-radius: 0;
+}
+
+.inv-edit-btn:hover {
+  color: var(--espresso);
+  border-color: var(--espresso);
+}
+
+@media (max-width: 768px) {
+  .inv-summary-bar {
+    flex-wrap: wrap;
+  }
+  .inv-summary-item {
+    min-width: 50%;
+  }
+  .inv-cell--mat { display: none; }
+}

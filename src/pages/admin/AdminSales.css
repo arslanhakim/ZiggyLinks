@@ -1,0 +1,184 @@
+.admin-sales-shell {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sales-stat-bar {
+  display: flex;
+  background: var(--off-white);
+  border-bottom: var(--border-hair);
+  overflow-x: auto;
+}
+
+.admin-sales-stat {
+  flex: 1;
+  min-width: 120px;
+  padding: 1.25rem 1.75rem;
+  border-right: var(--border-hair);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-sales-stat:last-child { border-right: none; }
+
+.admin-sales-stat-val {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+.admin-sales-body {
+  flex: 1;
+  padding: 1.5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.admin-sales-empty {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.admin-sales-day {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-sales-day-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: var(--border-mid);
+}
+
+.admin-sales-day-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+.admin-sales-day-count {
+  color: var(--warm-grey);
+  margin-top: 0.15rem;
+}
+
+.admin-sales-day-total {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+/* Table */
+.admin-sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.admin-sales-table thead th {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  background: var(--linen);
+  color: var(--mid-grey);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+
+.admin-sales-row {
+  border-bottom: var(--border-hair);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.admin-sales-row:hover { background: var(--linen); }
+.admin-sales-row--expanded { background: var(--linen); }
+
+.admin-sales-cell {
+  padding: 0.875rem 1rem;
+  vertical-align: middle;
+}
+
+.admin-sales-cell--expand {
+  text-align: right;
+  width: 40px;
+}
+
+.admin-expand-icon {
+  font-size: 0.55rem;
+  color: var(--mid-grey);
+}
+
+.admin-sales-customer {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--espresso);
+}
+
+.admin-sales-total {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--espresso);
+}
+
+.admin-sales-detail-row {
+  border-bottom: var(--border-hair);
+}
+
+.admin-sales-detail-cell {
+  padding: 0 0 0.5rem;
+}
+
+.admin-sales-detail {
+  padding: 0.875rem 1rem 0.875rem 2.5rem;
+  background: rgba(250, 247, 242, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-detail-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: var(--border-hair);
+}
+
+.admin-detail-line:last-of-type { border-bottom: none; }
+
+.admin-detail-name {
+  font-size: 0.8125rem;
+  color: var(--charcoal);
+}
+
+.admin-detail-price {
+  color: var(--warm-grey);
+}
+
+.admin-detail-note {
+  font-style: italic;
+  color: var(--warm-grey);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .admin-sales-stat-bar {
+    flex-wrap: wrap;
+  }
+  .admin-sales-stat { min-width: 50%; }
+  .admin-sales-body { padding: 1rem; }
+}

@@ -1,0 +1,148 @@
+.settings-shell {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 720px;
+}
+
+.settings-section {
+  background: var(--off-white);
+  border: var(--border-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.settings-section--danger {
+  border-color: rgba(140, 94, 60, 0.2);
+}
+
+.settings-section--info {
+  border-color: rgba(184, 150, 62, 0.2);
+  background: rgba(184, 150, 62, 0.04);
+}
+
+.settings-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--espresso);
+  padding-bottom: 0.75rem;
+  border-bottom: var(--border-hair);
+}
+
+.settings-section-desc {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--charcoal);
+}
+
+/* Form */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-label { color: var(--warm-grey); }
+
+.settings-input {
+  max-width: 400px;
+}
+
+.settings-hint {
+  color: var(--mid-grey);
+  font-style: italic;
+}
+
+.settings-save-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settings-saved {
+  color: #3d7a3d;
+}
+
+/* Danger zone */
+.settings-danger-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.settings-danger-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  border-bottom: var(--border-hair);
+}
+
+.settings-danger-item:last-child { border-bottom: none; }
+
+.settings-danger-item--critical .settings-danger-title {
+  color: var(--rust-muted);
+}
+
+.settings-danger-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--espresso);
+  margin-bottom: 0.25rem;
+}
+
+.settings-danger-desc {
+  color: var(--warm-grey);
+  max-width: 400px;
+}
+
+.settings-btn-critical {
+  border-color: rgba(140, 94, 60, 0.3);
+  color: var(--rust-muted);
+}
+
+.settings-btn-critical:hover {
+  background: rgba(140, 94, 60, 0.08);
+  border-color: var(--rust-muted);
+}
+
+/* Info */
+.settings-steps {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.settings-steps li {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8em;
+  background: var(--oat);
+  padding: 0.1em 0.4em;
+  color: var(--espresso);
+}

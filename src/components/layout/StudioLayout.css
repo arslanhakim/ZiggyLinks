@@ -1,0 +1,137 @@
+.studio-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--linen);
+}
+
+.studio-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: var(--espresso);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.studio-sidebar__brand {
+  padding: 0 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.studio-brand-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.studio-logo {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--oat);
+  letter-spacing: 0.02em;
+}
+
+.studio-mode-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+}
+
+.studio-nav {
+  flex: 1;
+  padding: 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.studio-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--mid-grey);
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.studio-nav-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--oat);
+}
+
+.studio-nav-link--active {
+  background: rgba(184, 150, 62, 0.15);
+  color: var(--brass-light);
+}
+
+.studio-nav-icon {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.studio-sidebar__footer {
+  padding: 1.5rem 1.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mode-switch {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--warm-grey);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mode-switch:hover {
+  color: var(--brass-light);
+}
+
+.studio-main {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .studio-sidebar {
+    width: 60px;
+  }
+  .studio-logo,
+  .studio-mode-label,
+  .studio-nav-link span:last-child,
+  .studio-sidebar__footer {
+    display: none;
+  }
+  .studio-sidebar__brand {
+    padding: 0 0.75rem 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .studio-nav {
+    padding: 0 0.5rem;
+    align-items: center;
+  }
+  .studio-nav-link {
+    padding: 0.8rem;
+    justify-content: center;
+  }
+  .studio-nav-icon {
+    font-size: 1rem;
+  }
+}
