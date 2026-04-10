@@ -14,7 +14,8 @@
       "Bash(gh auth:*)",
       "Bash(gh repo:*)",
       "Bash(git pull:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

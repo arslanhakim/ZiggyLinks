@@ -5,7 +5,7 @@ import { useState } from 'react';
 // Falls back to a branded type-on-gradient treatment — not a broken state.
 //
 // Image folder structure:
-//   /public/images/products/   — product photos (chain-01.png, anklet-01.png, etc.)
+//   /public/images/products/   — product photos (chain-01.webp, anklet-01.webp, etc.)
 //   /public/images/gallery/    — lookbook / on-body / lifestyle shots
 //   /public/images/studio/     — studio interior, team, weld process, hero
 //

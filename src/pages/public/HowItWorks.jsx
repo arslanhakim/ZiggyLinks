@@ -9,7 +9,7 @@ const STEPS = [
     title: 'Book your visit',
     body: "Reserve a slot through our booking form or WhatsApp. We recommend 30\u201345 minutes for first-time clients. No walk-ins \u2014 the experience works best when we have time dedicated to you.",
     note: "We're open Tuesday\u2013Saturday, 10am\u20136pm.",
-    img: '/images/studio/studio-02.png',
+    img: '/images/studio/studio-02.webp',
     imgDetail: 'The studio',
   },
   {
@@ -17,7 +17,7 @@ const STEPS = [
     title: 'Browse in-studio',
     body: "When you arrive, we'll show you the full collection \u2014 chains, anklets, bracelets, and rings. You can hold each piece, feel the weight, compare materials. We'll talk you through width, finish, and drape.",
     note: 'Bring inspiration photos if you have them.',
-    img: '/images/studio/studio-03.png',
+    img: '/images/studio/studio-03.webp',
     imgDetail: 'Browsing pieces',
   },
   {
@@ -25,7 +25,7 @@ const STEPS = [
     title: 'Choose and fit',
     body: "Once you've decided, we'll drape the piece on your wrist, ankle, or neck to find the perfect fit. We measure carefully \u2014 snug but not tight. We'll make small adjustments until it sits right.",
     note: 'Sizing is permanent, so we take our time here.',
-    img: '/images/studio/studio-01.png',
+    img: '/images/studio/studio-01.webp',
     imgDetail: 'Fitting the piece',
   },
   {
@@ -33,7 +33,7 @@ const STEPS = [
     title: 'The weld',
     body: "A jeweller's pulse arc welder fuses the link in a tiny, precise spark. It doesn't touch your skin and you'll barely feel a thing. The whole weld takes under five seconds.",
     note: 'Safe, painless, and surprisingly satisfying.',
-    img: '/images/studio/weld-process-01.png',
+    img: '/images/studio/weld-process-01.webp',
     imgDetail: 'Micro-weld',
   },
   {
@@ -41,7 +41,7 @@ const STEPS = [
     title: 'Wear it forever',
     body: "No clasp to fiddle with, no fastener to lose. Your piece is yours now \u2014 permanently. Most clients forget they're wearing it within a week.",
     note: 'Pieces can be removed with scissors if ever needed.',
-    img: '/images/studio/studio-04.png',
+    img: '/images/studio/studio-04.webp',
     imgDetail: 'Worn for life',
   },
 ];
