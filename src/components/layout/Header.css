@@ -4,7 +4,12 @@
   left: 0;
   right: 0;
   z-index: 100;
+  width: 100%;
+  max-width: 100vw;
   padding: 0.875rem var(--container-px);
+  /* Respect notch on landscape phones — pad inside the safe area */
+  padding-left: max(var(--container-px), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--container-px), env(safe-area-inset-right, 0px));
   transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -36,7 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
+  min-width: 0;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -51,24 +58,29 @@
   flex-direction: column;
   gap: 0.1rem;
   text-decoration: none;
-  flex-shrink: 0;
+  min-width: 0;
+  flex: 0 1 auto;
 }
 
 .logo-wordmark {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: clamp(1.15rem, 4.5vw, 1.4rem);
   letter-spacing: 0.02em;
   color: var(--espresso);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .logo-sub {
   font-family: var(--font-sans);
-  font-size: 0.6rem;
+  font-size: clamp(0.55rem, 1.6vw, 0.6rem);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--warm-grey);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Nav — hidden on mobile, shown on desktop */
@@ -145,7 +157,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: -0.5rem; /* optical alignment to edge */
+  flex-shrink: 0;
 }
 
 @media (min-width: 901px) {
@@ -188,12 +200,15 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
+  width: 100%;
+  max-width: 100vw;
   background: var(--cream);
   z-index: 90;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 4.5rem; /* clears fixed header */
+  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
   opacity: 0;
