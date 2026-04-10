@@ -22,7 +22,7 @@ export default function Visit() {
               East Cantonments,<br />
               Accra, Ghana
             </p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-visit-link">
+            <a href="https://maps.app.goo.gl/EnsfGz8DPrC5YnUx7" target="_blank" rel="noopener noreferrer" className="text-visit-link">
               Open in Maps →
             </a>
           </div>
@@ -47,11 +47,11 @@ export default function Visit() {
           <div className="visit-detail-block">
             <p className="t-label">Contact</p>
             <div className="visit-contacts">
-              <a href="https://wa.me/233248310045" className="visit-contact-item">
+              <a href="https://wa.me/233551888606" className="visit-contact-item">
                 <span className="visit-contact-icon">{'\u2706'}</span>
                 <div>
                   <p className="visit-contact-label t-small">WhatsApp</p>
-                  <p className="t-body">+233 24 831 0045</p>
+                  <p className="t-body">+233 55 188 8606</p>
                 </div>
               </a>
               <a href="mailto:hello@ziggylinks.com" className="visit-contact-item">
@@ -61,11 +61,11 @@ export default function Visit() {
                   <p className="t-body">hello@ziggylinks.com</p>
                 </div>
               </a>
-              <a href="https://instagram.com/ziggylinks" target="_blank" rel="noopener noreferrer" className="visit-contact-item">
+              <a href="https://www.instagram.com/ziggylinks.gh/" target="_blank" rel="noopener noreferrer" className="visit-contact-item">
                 <span className="visit-contact-icon">{'\u25C8'}</span>
                 <div>
                   <p className="visit-contact-label t-small">Instagram</p>
-                  <p className="t-body">@ziggylinks</p>
+                  <p className="t-body">@ziggylinks.gh</p>
                 </div>
               </a>
             </div>
@@ -154,7 +154,7 @@ export default function Visit() {
           <p className="visit-map__address">
             12 Ringway Link, East Cantonments, Accra, Ghana
           </p>
-          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="btn btn--outline visit-map__btn">
+          <a href="https://maps.app.goo.gl/EnsfGz8DPrC5YnUx7" target="_blank" rel="noopener noreferrer" className="btn btn--outline visit-map__btn">
             Open in Google Maps
           </a>
         </div>

@@ -45,11 +45,9 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="t-small">© {year} ZiggyLinks. All rights reserved. Accra, Ghana.</p>
           <div className="footer-socials">
-            <a href="https://instagram.com/ziggylinks" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
+            <a href="https://www.instagram.com/ziggylinks.gh/" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
             <span className="footer-dot">·</span>
-            <a href="https://wa.me/233248310045" target="_blank" rel="noopener noreferrer" className="social-link">WhatsApp</a>
-            <span className="footer-dot">·</span>
-            <a href="https://tiktok.com/@ziggylinks" target="_blank" rel="noopener noreferrer" className="social-link">TikTok</a>
+            <a href="https://wa.me/233551888606" target="_blank" rel="noopener noreferrer" className="social-link">WhatsApp</a>
           </div>
         </div>
       </div>

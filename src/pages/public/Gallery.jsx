@@ -60,8 +60,8 @@ export default function Gallery() {
           <p className="t-body gallery-social__body">
             We share client pieces, studio moments, and new arrivals every week.
           </p>
-          <a href="https://instagram.com/ziggylinks" target="_blank" rel="noopener noreferrer" className="btn btn--primary">
-            @ZiggyLinks
+          <a href="https://www.instagram.com/ziggylinks.gh/" target="_blank" rel="noopener noreferrer" className="btn btn--primary">
+            @ziggylinks.gh
           </a>
         </div>
       </section>

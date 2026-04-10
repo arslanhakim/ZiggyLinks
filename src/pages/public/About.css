@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-xl) 0 var(--space-xl);
 }
 
 @media (min-width: 901px) {
@@ -40,6 +40,10 @@
 .about-hero__headline {
   margin-top: 0;
   color: var(--espresso);
+  /* Italic serif descenders (g, p, y) need breathing room so they don't
+     clip against the next section. */
+  line-height: 1.1;
+  padding-bottom: 0.25em;
 }
 
 .about-hero__headline em {
@@ -271,16 +275,18 @@
   background: var(--espresso);
 }
 
-.about-cta__headline {
+/* Scoped via parent so these win over .t-body's color rule from global.css,
+   which is loaded after page CSS in the Vite bundle. */
+.about-cta .about-cta__headline {
   color: var(--oat);
 }
 
-.about-cta__headline em {
+.about-cta .about-cta__headline em {
   font-style: italic;
   color: var(--brass-light);
 }
 
-.about-cta__body {
+.about-cta .about-cta__body {
   color: var(--sand);
   margin: 1.25rem auto 0;
   max-width: 400px;

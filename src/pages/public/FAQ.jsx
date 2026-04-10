@@ -81,7 +81,7 @@ export default function FAQ() {
         <div className="faq-contact-strip">
           <p className="t-subtitle">Still have a question?</p>
           <div className="faq-contact-actions">
-            <a href="https://wa.me/233248310045" className="btn btn--outline">WhatsApp Us</a>
+            <a href="https://wa.me/233551888606" className="btn btn--outline">WhatsApp Us</a>
             <Link to="/contact" className="btn btn--ghost">Send an Email</Link>
           </div>
         </div>

@@ -18,9 +18,9 @@ export function Contact() {
           <div>
             <p className="t-label" style={{ marginBottom: '1.5rem' }}>Reach Us Directly</p>
             {[
-              { label: 'WhatsApp', value: '+233 24 831 0045', href: 'https://wa.me/233248310045', icon: '\u2706' },
+              { label: 'WhatsApp', value: '+233 55 188 8606', href: 'https://wa.me/233551888606', icon: '\u2706' },
               { label: 'Email', value: 'hello@ziggylinks.com', href: 'mailto:hello@ziggylinks.com', icon: '\u2709' },
-              { label: 'Instagram', value: '@ziggylinks', href: 'https://instagram.com/ziggylinks', icon: '\u25C8' },
+              { label: 'Instagram', value: '@ziggylinks.gh', href: 'https://www.instagram.com/ziggylinks.gh/', icon: '\u25C8' },
             ].map(c => (
               <a key={c.label} href={c.href} className="contact-row">
                 <span className="contact-row__icon">{c.icon}</span>
@@ -171,7 +171,7 @@ export function Events() {
         </div>
         <div className="events-follow">
           <p className="t-subtitle">Stay updated on new events and pop-ups.</p>
-          <a href="https://instagram.com/ziggylinks" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ marginTop: '1.5rem' }}>Follow @ZiggyLinks</a>
+          <a href="https://www.instagram.com/ziggylinks.gh/" target="_blank" rel="noopener noreferrer" className="btn btn--primary" style={{ marginTop: '1.5rem' }}>Follow @ziggylinks.gh</a>
         </div>
       </div>
     </PublicLayout>
