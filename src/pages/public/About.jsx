@@ -15,7 +15,7 @@ export default function About() {
           </h1>
         </div>
         <div className="about-hero__image">
-          <ImagePlaceholder src="/images/studio/founder.jpg" name="Abena Asante" detail="Founder" className="about-hero__img" />
+          <ImagePlaceholder src="/images/studio/studio-04.png" name="Abena Asante" detail="Founder" className="about-hero__img" />
         </div>
       </section>
 
@@ -39,10 +39,10 @@ export default function About() {
           </div>
           <div className="about-origin__images">
             <div className="origin-img origin-img--top">
-              <ImagePlaceholder src="/images/studio/interior.jpg" name="Studio interior" detail="East Cantonments, Accra" />
+              <ImagePlaceholder src="/images/studio/studio-02.png" name="Studio interior" detail="East Cantonments, Accra" />
             </div>
             <div className="origin-img origin-img--bottom">
-              <ImagePlaceholder src="/images/studio/weld-closeup.jpg" name="The weld moment" detail="Micro-weld process" />
+              <ImagePlaceholder src="/images/studio/weld-process-01.png" name="The weld moment" detail="Micro-weld process" />
             </div>
           </div>
         </div>
@@ -77,8 +77,8 @@ export default function About() {
           <p className="t-label">The Studio</p>
           <div className="team-grid">
             {[
-              { name: 'Abena Asante', role: 'Founder & Lead Jeweller', bio: 'Trained in permanent jewellery welding in London. Obsessed with details, materials, and making clients feel seen.', img: '/images/studio/team-abena.jpg' },
-              { name: 'Kofi Mensah', role: 'Studio Assistant & Client Experience', bio: 'Kofi handles bookings, client care, and makes sure the studio is always a calm, welcoming place to spend an hour.', img: '/images/studio/team-kofi.jpg' },
+              { name: 'Abena Asante', role: 'Founder & Lead Jeweller', bio: 'Trained in permanent jewellery welding in London. Obsessed with details, materials, and making clients feel seen.', img: '/images/studio/studio-01.png' },
+              { name: 'Kofi Mensah', role: 'Studio Assistant & Client Experience', bio: 'Kofi handles bookings, client care, and makes sure the studio is always a calm, welcoming place to spend an hour.', img: '/images/studio/studio-03.png' },
             ].map(person => (
               <div key={person.name} className="team-card">
                 <ImagePlaceholder src={person.img} name={person.name} detail={person.role} className="team-img" />

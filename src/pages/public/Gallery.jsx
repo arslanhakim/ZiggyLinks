@@ -3,21 +3,21 @@ import ImagePlaceholder from '../../components/ImagePlaceholder';
 import { Link } from 'react-router-dom';
 import './Gallery.css';
 
-// Gallery items — mix of product on-body shots, studio moments, and detail close-ups.
-// Each src points to /public/images/gallery/. Drop in real photos to replace fallbacks.
+// Gallery items — mix of product shots, studio moments, and lifestyle.
+// Uses real images from /public/images/.
 const GALLERY_ITEMS = [
-  { id: 1,  src: '/images/gallery/venetian-wrist.jpg',    name: 'Venetian Box Chain',      detail: 'On wrist · 14K Gold Fill',            aspect: 'portrait',      caption: 'Venetian Box Chain on wrist' },
-  { id: 2,  src: '/images/gallery/satellite-ankle.jpg',   name: 'Satellite Anklet',         detail: 'On ankle · Sterling Silver',           aspect: 'landscape',     caption: 'Satellite Anklet, beach light' },
-  { id: 3,  src: '/images/gallery/paperclip-neck.jpg',    name: 'Paperclip Necklace',       detail: 'On neck · Rose Gold Fill',             aspect: 'portrait-tall', caption: 'Paperclip Necklace draped' },
-  { id: 4,  src: '/images/gallery/weld-moment.jpg',       name: 'The weld',                 detail: 'Studio moment',                        aspect: 'square',        caption: 'The welding moment' },
-  { id: 5,  src: '/images/gallery/figaro-stack.jpg',      name: 'Figaro + Midi Ring',       detail: 'Wrist stack · 14K Gold',               aspect: 'portrait',      caption: 'Figaro Chain and Midi Ring' },
-  { id: 6,  src: '/images/gallery/cable-ankle.jpg',       name: 'Cable Chain Anklet',       detail: 'Detail · 14K Gold Fill',               aspect: 'landscape',     caption: 'Cable Chain close-up' },
-  { id: 7,  src: '/images/gallery/studio-interior.jpg',   name: 'Our studio',               detail: 'East Cantonments, Accra',              aspect: 'landscape',     caption: 'The ZiggyLinks studio' },
-  { id: 8,  src: '/images/gallery/herringbone-flat.jpg',  name: 'Herringbone Chain',        detail: 'Flat lay · 18K Gold Fill',             aspect: 'portrait',      caption: 'Herringbone flat lay' },
-  { id: 9,  src: '/images/gallery/group-wrists.jpg',      name: 'Three wrists',             detail: 'Group weld session',                   aspect: 'square',        caption: 'Friends welded together' },
-  { id: 10, src: '/images/gallery/curb-bold.jpg',         name: 'Curb Chain Bracelet',      detail: 'On wrist · 14K Gold Fill',             aspect: 'portrait-tall', caption: 'Curb Chain — bold weight' },
-  { id: 11, src: '/images/gallery/rope-texture.jpg',      name: 'Rope Twist Chain',         detail: 'Macro texture · 18K Gold',             aspect: 'square',        caption: 'Rope Twist detail' },
-  { id: 12, src: '/images/gallery/snake-draped.jpg',      name: 'Snake Chain Necklace',     detail: 'Draped · 18K Gold Fill',               aspect: 'landscape',     caption: 'Snake Chain draped on collarbone' },
+  { id: 1,  src: '/images/gallery/lookbook-03.png',       name: 'Worn together',            detail: 'Necklace + bracelet',                  aspect: 'portrait-tall', caption: 'Layered on skin' },
+  { id: 2,  src: '/images/studio/studio-02.png',          name: 'The workbench',            detail: 'Studio, Accra',                        aspect: 'landscape',     caption: 'Where every piece begins' },
+  { id: 3,  src: '/images/products/chain-01.png',         name: 'Cable chain',              detail: '14K Gold Fill',                        aspect: 'square',        caption: 'Venetian Box Chain' },
+  { id: 4,  src: '/images/studio/weld-process-01.png',    name: 'The weld',                 detail: 'Studio moment',                        aspect: 'portrait',      caption: 'The welding moment' },
+  { id: 5,  src: '/images/gallery/lookbook-01.png',       name: 'The collection',           detail: 'Chains + charms',                      aspect: 'landscape',     caption: 'Chains and charms, laid out' },
+  { id: 6,  src: '/images/products/anklet-01.png',        name: 'Anklet on skin',           detail: '14K Gold Fill',                        aspect: 'portrait-tall', caption: 'Cable anklet, golden hour' },
+  { id: 7,  src: '/images/products/bracelet-02.png',      name: 'Stacked bracelets',        detail: 'Wrist stack',                          aspect: 'portrait',      caption: 'Two chains, one wrist' },
+  { id: 8,  src: '/images/studio/studio-03.png',          name: 'Choosing a piece',         detail: 'Client experience',                    aspect: 'portrait',      caption: 'Browsing the collection' },
+  { id: 9,  src: '/images/products/charm-01.png',         name: 'Charm collection',         detail: '14K Gold Fill',                        aspect: 'square',        caption: 'Hearts, moons, stars' },
+  { id: 10, src: '/images/gallery/lookbook-02.png',       name: 'In the hands',             detail: 'Detail close-up',                      aspect: 'portrait',      caption: 'Delicate cable chain' },
+  { id: 11, src: '/images/gallery/lookbook-04.png',       name: 'Studio flat lay',          detail: 'Pieces + charms',                      aspect: 'landscape',     caption: 'The full offering' },
+  { id: 12, src: '/images/studio/studio-04.png',          name: 'Craftsmanship',            detail: 'By hand',                              aspect: 'square',        caption: 'Every link, by hand' },
 ];
 
 export default function Gallery() {

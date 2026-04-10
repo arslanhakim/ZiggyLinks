@@ -17,7 +17,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero__media">
           <ImagePlaceholder
-            src="/images/studio/hero.jpg"
+            src="/images/gallery/lookbook-03.png"
             className="hero__image"
             name="Permanent chain on wrist"
             detail="Hero photograph"
@@ -77,14 +77,14 @@ export default function Home() {
             <div className="editorial-intro__images">
               <div className="intro-img intro-img--tall">
                 <ImagePlaceholder
-                  src="/images/studio/interior.jpg"
+                  src="/images/studio/studio-02.png"
                   name="Studio interior"
                   detail="East Cantonments, Accra"
                 />
               </div>
               <div className="intro-img intro-img--small">
                 <ImagePlaceholder
-                  src="/images/studio/weld-closeup.jpg"
+                  src="/images/studio/weld-process-01.png"
                   name="The weld moment"
                   detail="Micro-weld process"
                 />
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="lookbook-grid">
           <div className="lookbook-img lookbook-img--left">
             <ImagePlaceholder
-              src="/images/gallery/lookbook-wrist.jpg"
+              src="/images/gallery/lookbook-04.png"
               name="Figaro chain on wrist"
               detail="Lookbook"
             />
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
           <div className="lookbook-img lookbook-img--right">
             <ImagePlaceholder
-              src="/images/gallery/lookbook-ankle.jpg"
+              src="/images/gallery/lookbook-01.png"
               name="Satellite anklet"
               detail="Lookbook"
             />
