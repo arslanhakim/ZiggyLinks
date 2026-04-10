@@ -1,7 +1,7 @@
 # ZiggyLinks — Frontend
 
 Permanent jewellery studio website + in-studio POS + admin panel.
-Built with React + Vite. Ready to deploy on Netlify.
+Built with React + Vite. Ready to deploy on Server.
 
 ---
 
